@@ -1,70 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form</title>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
-<header>
-    <h1>Application Form</h1>
-    <hr>
-</header>
+
 <body>
     <main>
-       <nav aria-describedby="primary navigation">
-        <ul>
-            <li>
-                <a href="index.html">Homepage</a>
-            </li>
-        </ul>
-       </nav>
-        <h2>Sign Up</h2>
-        <p>Please if you are interested in joining the program, please kindly fill out 
-            the form below;
-        </p>
-        <legend>
-        <form action="" target="_blank" method="post">
-            <label for="fname">Firstname:</label>
-            <input type="text" id="fname" placeholder="Firstname" aria-required="true">
-            
-            <label for="lname">Lastname:</label>
-            <input type="text" id="lname" name="lname" value="lastname">
-            
-            <label for="Gender">Gender:</label>
-            <select id="Gender" name="Gender" aria-placeholder="Select a gender">
-                <option value="Male">Select gender</option>
-                <option value="Female">Male</option>
-                <option value="female">Female</option>
-            </select>
-        
-            <label for="birthday">Date of Birth:</label>
-            <input type="date" id="birthday" name="birthday">
-        
-            <label for="phone no">Phone Number:</label>
-            <input type="text" name="phone no" id="phone no" placeholder="Phone Number">
+        <header>
+            <h1>Application Form</h1>
+            <li><a href="index.html">Homepage</a></li>
+        </header>
+        <div class="main">
+            <div class="image">
+                <div>
+                    <img src="/assignment1/images/logo 11-02-2025 at 21.25.jpg" width="500px" height="500px"
+                        alt="img depicting graduation">
+                </div>
+                <div>
+                    <p> Learn highly sougth after skills without hassle.</p>
+                </div>
+            </div>
 
-            <label for="country of residence">Country of Residence</label>
-            <input type="text" id="country of residence" name="country of residence" placeholder="Country of Residence">
+            <div class="parent">
+                <div class="signin-parent">
+                    <div class="sign-in"> 
+                        <p>Already an Altscholar? <a href="sign-in">Sign In!</a></p>
+                    </div>
+                    <div>
+                        <div class="signup">
+                            <h2>Signup</h2>
+                            <p>Take the next step to apply at AltSchool Africa</p>
 
-            <label for="state of residence">State of Residence</label>
-            <input type="text" id="state of residence" name="state of residence" placeholder="State of Residence">
+                        </div>
+                        <div class="grid">
+                            <div class="child-grid">
+                                <label for="fname">Firstname:</label>
+                                <input type="text" id="fname" name="fname" placeholder="Firstname" aria-required="true">
+                            </div>
 
-            <label for="pwd">Password</label>
-            <input type="text" id="pwd" name="pwd" placeholder="Password">
+                            <div class="child-grid">
+                                <label for="lname">Lastname:</label>
+                                <input type="text" id="lname" name="lname" placeholder="Lastname">
+                            </div>
+                            <div class="child-grid">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="Email">
+                            </div>
 
-            <label for="con password">Confirm Password</label>
-            <input type="text" id="con password" name="con password" placeholder="Confirm Password">
+                            <div class="child-grid">
+                                <label for="Gender">Gender:</label>
+                                <select id="Gender" name="Gender" aria-placeholder="Select a gender">
+                                    <option value="#">Select gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
 
-            <label for="about us">How did you hear about us?</label>
-            <input type="text" id="about us" name="about us" 
-            placeholder="Optional:Let us know how you found us">
+                            </div>
+                            <div class="child-grid">
+                                <label for="birthday">Date of Birth:</label>
+                                <input type="date" id="birthday" name="birthday">
+                            </div>
 
-            <p>By clicking continue, I agree to <a href="#">Terms of Use</a>and 
-            acknowledge  that I have read the <a href="#">Privacy Policy.</a> </p>
-        </form>
-        </legend>
+                            <div class="child-grid">
+                                <label for="phone no">Phone Number:</label>
+                                <input type="text" name="phone no" id="phone no" placeholder="Phone Number">
+                            </div>
+                            <div class="child-grid">
+                                <label for="country of residence">Country of Residence</label>
+                                <input type="text" id="country of residence" name="country of residence"
+                                    placeholder="Country of Residence">
+
+                            </div>
+                            <div class="child-grid">
+                                <label for="state of residence">State of Residence</label>
+                                <input type="text" id="state of residence" name="state of residence"
+                                    placeholder="State of Residence">
+                            </div>
+
+                            <div class="child-grid">
+                                <label for="pwd">Password</label>
+                                <input type="password" id="pwd" name="pwd" placeholder="Password">
+                            </div>
+                            <div class="child-grid">
+                                <label for="con password">Confirm Password</label>
+                                <input type="password" id="con password" name="con password" placeholder="Confirm Password">
+                            </div>
+                            <div class="child-grid aboutus">
+                                <label for="about us">How did you hear about us?</label>
+                                <input type="text" id="about us" name="about us"
+                                    placeholder="Optional:Let us know how you found us">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>By clicking continue, I agree to <a href="#">Terms of Use</a> and
+                    acknowledge that I have read the <a href="#">Privacy Policy.</a>
+                </p>
+                <div>
+                    <button type="submit">Signup</button>
+                </div>
+
+                </form>
+                
+
+
+               
+
+
+            </div>
+
     </main>
-  
-    
+
+
 </body>
+
 </html>

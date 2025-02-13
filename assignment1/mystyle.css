@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monda:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+/* global variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* main body design */
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    
+    padding: 20px;
+    
+
+}
+/* header design */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+ li a {
+    padding-left: 70px;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 30px;
+    color: rgba(0, 0, 0);
+} 
+/* designing the div with the image */
+.image {
+    width: 40%;
+    /* margin-left: 50px; */
+    
+    align-items: center;
+}
+.image p {
+    font-size: 65px;
+    text-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+
+}
+/* form page design */
+.signup  {
+    font-size: 1.5em;
+}
+.signup p {
+    font-size: 20px;
+}
+.sign-in p {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+}
+.signin-parent {
+    display: block;
+    position: relative;
+    
+}
+/* form design */
+.parent {
+    display: grid;
+    width: 60%;
+    height: 100vh;
+    justify-content: start;
+    position: relative;
+    
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    font-size: 25px;
+    /* font-weight: normal; */
+    width: 100%;
+    height: auto;
+    column-gap: 50px;
+    
+}
+.aboutus {
+   
+    width: 100%;
+}
+.child-grid {
+    display: grid;
+    width: 100px;
+    padding: 15px;
+}
+select,
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+button[type="submit"] {
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 400px;
+}
+button {
+    /* grid-template-columns: span 2; */
+    padding: 5px;
+    margin-top: 0px;
+    width: 900px;
+    background-color: rgba(11, 20, 190, 0.943);
+    border-radius: 6px;
+}
+button:hover {
+    background-color: beige;
+}
+p {
+    font-size: 20px;
+
+
+}
+label {
+    margin-top: 8px;
+    padding: 5px 0px;
+}
+
+p {
+    font-size: 1.4rem;
+    margin: 20px 0px;
+}
+/* Mobile Responsiveness */
+
+@media (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .image, .parent {
+        width: 80%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .image {
+        width: 90%;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .parent {
+        width: 90%;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    input, select, button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .parent {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    input, select, button {
+        width: 100%;
+    }
+
+    .signup p {
+        font-size: 16px;
+    }
+
+    .sign-in p {
+        font-size: 18px;
+        justify-content: center;
+    }
+}
